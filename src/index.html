@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="./output.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/41e3d01f75.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+
+    <style>
+        .icon {
+            width: 30px;
+            height: 20px;
+            display: inline-block;
+        }
+
+
+    </style>
+
+</head>
+<body class="bg-rose-900">
+    <div class="grid auto-cols-auto pt-2 px-2 mx-4 mt-4" style="height: 100vh">
+        <div class="sidebar col-start-1 col-span-1 row-span-3">
+            <i class="dashIcon fa-solid fa-chart-line text-3xl align-middle mr-2 inline-block"></i>
+            <h1 class="text-2xl font-bold dark:text-white inline-block align-middle">
+                Dashboard
+            </h1>
+            <ul class="list-none leading-10 py-6 px-1.5">
+                <li><i class="icon fa-solid fa-house"></i>Home</li>
+                <li><i class="icon fa-solid fa-user"></i>Profile</li>
+                <li><i class="icon fa-solid fa-message"></i>Messages</li>
+                <li><i class="icon fa-solid fa-clock"></i>History</li>
+                <li><i class="icon fa-solid fa-list-check"></i>Tasks</li>
+                <li><i class="icon fa-solid fa-people-group"></i>Communities</li>
+            </ul>
+            <ul class="list-none leading-10 py-6 px-1.5">
+                <li><i class="icon fa-solid fa-gear"></i>Settings</li>
+                <li><i class="icon fa-solid fa-circle-info"></i>Support</li>
+                <li><i class="icon fa-solid fa-shield-halved"></i>Privacy</li>
+            </ul>
+        </div>
+        <div class="grid header col-start-2 col-span-4">
+            <div class="grid auto-cols-auto">
+
+                <div class="search row-start-1 col-span-2 gap-6">
+                    <div class="absolute">
+                        <i class="fa fa-search z-20 hover:text-gray-500 relative top-4 left-5"></i>
+                    </div>
+                    <input type="text" class="bg-gray-200 h-14 w-4/5 mx-3 px-7 rounded-3xl z-0 focus:shadow focus:outline-none" placeholder="Search anything...">
+                </div>
+                <div class="userRight col-start-3 align-middle">
+                    <i class="fa-regular fa-bell inline-block text-xl"></i>
+                    <i class="fa-solid fa-circle-user inline-block text-xl" style="color: #edc14e;"></i>
+                    <p class="font-semibold inline-block text-blue-950">Leonard Farmer</p>
+                </div>
+
+                <div class="userIntro row-start-2 col-span-2">3</div>
+                <div class="panelButtonGroup inline-flex gap-x-1.5" role="group">
+                    <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl">
+                        Profile
+                    </button>
+                    <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl">
+                    Settings
+                    </button>
+                    <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl">
+                    Messages
+                    </button>
+
+                </div>
+
+                
+
+            </div>
+        </div>
+
+        <div class="row-start-2 col-start-2 col-span-3">test</div>
+    </div>
+</body>
+</html>
