@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="./output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/41e3d01f75.js" crossorigin="anonymous"></script>
 
@@ -21,59 +21,108 @@
     </style>
 
 </head>
-<body class="bg-rose-900">
-    <div class="grid auto-cols-auto pt-2 px-2 mx-4 mt-4" style="height: 100vh">
-        <div class="sidebar col-start-1 col-span-1 row-span-3">
-            <i class="dashIcon fa-solid fa-chart-line text-3xl align-middle mr-2 inline-block"></i>
-            <h1 class="text-2xl font-bold dark:text-white inline-block align-middle">
-                Dashboard
-            </h1>
-            <ul class="list-none leading-10 py-6 px-1.5">
-                <li><i class="icon fa-solid fa-house"></i>Home</li>
-                <li><i class="icon fa-solid fa-user"></i>Profile</li>
-                <li><i class="icon fa-solid fa-message"></i>Messages</li>
-                <li><i class="icon fa-solid fa-clock"></i>History</li>
-                <li><i class="icon fa-solid fa-list-check"></i>Tasks</li>
-                <li><i class="icon fa-solid fa-people-group"></i>Communities</li>
-            </ul>
-            <ul class="list-none leading-10 py-6 px-1.5">
-                <li><i class="icon fa-solid fa-gear"></i>Settings</li>
-                <li><i class="icon fa-solid fa-circle-info"></i>Support</li>
-                <li><i class="icon fa-solid fa-shield-halved"></i>Privacy</li>
-            </ul>
+<body>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5" style="height: 100vh">
+        <div class="sidebar col-start-1 col-span-1 row-span-3 bg-sky-500">
+            <div class="flex flex-col box-border p-6">
+                <div class="flex items-baseline">
+                    <i class="fa-solid fa-chart-line text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white mr-2"></i>
+                    <h1 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white font-bold">
+                        Dashboard
+                    </h1>
+                </div>
+                <ul class="flex flex-col list-none leading-10 py-6 px-1.5 gap-2 cursor-pointer ">
+                    <li class="flex items-center p-2 my-2 hover:text-xl hover:-translate-y-0.5 hover:bg-blue-500 hover:border-current hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-house text-white"></i>
+                        <span class="font-bold text-slate-200">Home</span>
+                    </li>
+                    <li class="flex items-center p-2 my-2 hover:text-xl hover:-translate-y-0.5 hover:bg-blue-500 hover:border-current hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-user text-white"></i>
+                        <span class="font-bold text-slate-200">Profile</span>
+                    </li>
+                    <li class="flex items-center p-2 my-2 hover:text-xl hover:-translate-y-0.5 hover:bg-blue-500 hover:border-current hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-message text-white"></i>
+                        <span class="font-bold text-slate-200">Messages</span>
+                    </li>
+                    <li class="flex items-center p-2 my-2 hover:text-xl hover:-translate-y-0.5 hover:bg-blue-500 hover:border-current hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-clock text-white"></i>
+                        <span class="font-bold text-slate-200">History</span>
+                    </li>
+                    <li class="flex items-center p-2 my-2 hover:text-xl hover:-translate-y-0.5 hover:bg-blue-500 hover:border-current hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-list-check text-white"></i>
+                        <span class="font-bold text-slate-200">Tasks</span>
+                    </li>
+                    <li class="flex items-center p-2 my-2 hover:text-xl hover:-translate-y-0.5 hover:bg-blue-500 hover:border-current hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-people-group text-white"></i>
+                        <span class="font-bold text-slate-200">Communities</span>
+                    </li>
+                </ul>
+                <ul class="list-none leading-10 py-6 px-1.5 cursor-pointer">
+                    <li class="flex items-center p-2 my-2 hover:text-xl hover:-translate-y-0.5 hover:bg-blue-500 hover:border-current hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-gear text-white"></i>
+                        <span class="font-bold text-slate-200">Settings</span>
+                    </li>
+                    <li class="flex items-center p-2 my-2 hover:text-xl hover:-translate-y-0.5 hover:bg-blue-500 hover:border-current hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-circle-info text-white"></i>
+                        <span class="font-bold text-slate-200">Support</span>
+                    </li>
+                    <li class="flex items-center p-2 my-2 hover:text-xl hover:-translate-y-0.5 hover:bg-blue-500 hover:border-current hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-shield-halved text-white"></i>
+                        <span class="font-bold text-slate-200">Privacy</span>
+                    </li>
+                </ul>
+            </div>
+
+            
         </div>
-        <div class="grid header col-start-2 col-span-4">
-            <div class="grid auto-cols-auto">
-
-                <div class="search row-start-1 col-span-2 gap-6">
-                    <div class="absolute">
-                        <i class="fa fa-search z-20 hover:text-gray-500 relative top-4 left-5"></i>
+        <div class="grid col-start-2 col-span-full">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+                <div class="row-start-1 col-span-1 sm:col-span-2 lg:col-span-3 p-5">
+                    <div class="flex relative hover:scale-105 transition-transform duration-150">
+                        <i class="fa fa-search z-20 hover:text-gray-500 absolute top-5 left-5"></i>
+                        <input type="text" class="bg-gray-200 h-14 w-4/5 mx-3 px-7 rounded-3xl z-0 hover:border-sky-500 border-2 shadow-lg shadow-sky-600/50 hover:border-2 focus-visible:bg-slate-100 focus-visible:outline-none  cursor-text" placeholder="Search anything...">
                     </div>
-                    <input type="text" class="bg-gray-200 h-14 w-4/5 mx-3 px-7 rounded-3xl z-0 focus:shadow focus:outline-none" placeholder="Search anything...">
                 </div>
-                <div class="userRight col-start-3 align-middle">
-                    <i class="fa-regular fa-bell inline-block text-xl"></i>
-                    <i class="fa-solid fa-circle-user inline-block text-xl" style="color: #edc14e;"></i>
-                    <p class="font-semibold inline-block text-blue-950">Leonard Farmer</p>
+                <div class="col-start-3 lg:col-start-4 col-span-full p-5">
+                    <div class="inline-flex items-center space-x-4">
+                      <i class="fa-regular fa-bell text-2xl md:text-4xl"></i>
+                      <i class="fa-solid fa-circle-user text-2xl md:text-4xl" style="color: #edc14e;"></i>
+                      <p class="font-semibold text-blue-950 text-lg md:text-xl">Leonard Farmer</p>
+                    </div>
+                  </div>
+                <div class="row-start-2  col-span-1 sm:col-span-2 lg:col-span-3 p-5">
+                    <div class="flex">
+                        <i class="fa-solid fa-circle-user text-2xl md:text-4xl" style="color: #edc14e;"></i>
+                        <div class="flex flex-col items-start">
+                            <span class="text-xl font-semibold">Hi there,</span>
+                            <span class="text-2xl font-bold">Leonard Farmer(@thedividedorange)</span>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-start-3 col-start-3 lg:col-start-4 col-span-full ">
+5
+                </div>
+            </div>
+            
 
+<!-- 
                 <div class="userIntro row-start-2 col-span-2">3</div>
                 <div class="panelButtonGroup inline-flex gap-x-1.5" role="group">
-                    <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl">
+                    <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl font-semibold">
                         Profile
                     </button>
-                    <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl">
+                    <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl font-semibold">
                     Settings
                     </button>
-                    <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl">
+                    <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl font-semibold">
                     Messages
                     </button>
 
-                </div>
+                </div> -->
 
                 
 
-            </div>
+            
         </div>
 
         <div class="row-start-2 col-start-2 col-span-3">test</div>
