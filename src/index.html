@@ -16,99 +16,99 @@
             height: 20px;
             display: inline-block;
         }
-
-
     </style>
 
 </head>
-<body>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5" style="height: 100vh">
-        <nav class="sidebar col-start-1 col-span-1 row-span-3 bg-sky-500 sticky h-screen">
+<body class="h-screen">
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 h-full">
+        <!-- Sidebar -->
+        <nav class="sidebar col-start-1 col-span-1 row-span-3 bg-gray-800 border-r border-gray-700">
             <div class="flex flex-col box-border p-6">
                 <div class="flex items-baseline">
-                    <i class="fa-solid fa-chart-line text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white mr-2"></i>
-                    <h1 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white font-bold">
+                    <i class="fa-solid fa-chart-line text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-100 mr-2"></i>
+                    <h1 class="text-gray-100 font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl">
                         Dashboard
                     </h1>
                 </div>
-                <ul class="flex flex-col list-none leading-10 py-6 px-1.5 cursor-pointer ">
-                    <li class="flex items-center p-2 my-2 hover:scale-105 hover:bg-blue-500 hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-house text-white"></i>
-                        <span class="font-bold text-slate-200">Home</span>
+                <ul class="flex flex-col list-none leading-10 py-6 px-1.5 cursor-pointer">
+                    <li class="flex items-center p-2 my-2 rounded-lg hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-house text-gray-100"></i>
+                        <span class="font-bold text-gray-400">Home</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 hover:scale-105 hover:bg-blue-500 hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-user text-white"></i>
-                        <span class="font-bold text-slate-200">Profile</span>
+                    <li class="flex items-center p-2 mb-2 rounded-lg hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-user text-gray-100"></i>
+                        <span class="font-bold text-gray-400">Profile</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 hover:scale-105 hover:bg-blue-500 hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-message text-white"></i>
-                        <span class="font-bold text-slate-200">Messages</span>
+                    <li class="flex items-center p-2 mb-2 rounded-lg hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-message text-gray-100"></i>
+                        <span class="font-bold text-gray-400">Messages</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 hover:scale-105 hover:bg-blue-500 hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-clock text-white"></i>
-                        <span class="font-bold text-slate-200">History</span>
+                    <li class="flex items-center p-2 mb-2 rounded-lg hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-clock text-gray-100"></i>
+                        <span class="font-bold text-gray-400">History</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 hover:scale-105 hover:bg-blue-500 hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-list-check text-white"></i>
-                        <span class="font-bold text-slate-200">Tasks</span>
+                    <li class="flex items-center p-2 mb-2 rounded-lg hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-list-check text-gray-100"></i>
+                        <span class="font-bold text-gray-400">Tasks</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 hover:scale-105 hover:bg-blue-500 hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-people-group text-white"></i>
-                        <span class="font-bold text-slate-200">Communities</span>
+                    <li class="flex items-center p-2 mb-2 rounded-lg hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-people-group text-gray-100"></i>
+                        <span class="font-bold text-gray-400">Communities</span>
                     </li>
                 </ul>
                 <ul class="list-none leading-10 py-6 px-1.5 cursor-pointer">
-                    <li class="flex items-center p-2 mb-2 hover:scale-105 hover:bg-blue-500 hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-gear text-white"></i>
-                        <span class="font-bold text-slate-200">Settings</span>
+                    <li class="flex items-center p-2 mb-2 rounded-lg hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-gear text-gray-100"></i>
+                        <span class="font-bold text-gray-400">Settings</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 hover:scale-105 hover:bg-blue-500 hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-circle-info text-white"></i>
-                        <span class="font-bold text-slate-200">Support</span>
+                    <li class="flex items-center p-2 mb-2 rounded-lg hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-circle-info text-gray-100"></i>
+                        <span class="font-bold text-gray-400">Support</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 hover:scale-105 hover:bg-blue-500 hover:shadow-lg hover:shadow-current rounded-lg transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-shield-halved text-white"></i>
-                        <span class="font-bold text-slate-200">Privacy</span>
+                    <li class="flex items-center p-2 mb-2 rounded-lg hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
+                        <i class="icon fa-solid fa-shield-halved text-gray-100"></i>
+                        <span class="font-bold text-gray-400">Privacy</span>
                     </li>
                 </ul>
             </div>
         </nav>
-        <header class="grid col-start-2 col-span-full">
+        <!--Header-->
+        <header class="row-span-1 col-start-2 col-span-full bg-gray-900 border-b-8 border-gray-700">
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-                <section class="row-start-1 col-span-1 sm:col-span-2 lg:col-span-3 p-5">
-                    <div class="flex relative pl-5 hover:scale-105 transition-transform duration-150">
-                        <i class="fa fa-search z-20 hover:text-gray-500 absolute top-5 left-7"></i>
-                        <input type="text" class="bg-gray-200 h-14 w-11/12 px-7 rounded-3xl z-0 hover:border-sky-500 border-2 shadow-lg shadow-sky-600/50 hover:border-2 focus-visible:bg-slate-100 focus-visible:outline-none  cursor-text" placeholder="Search anything...">
+                <section class="col-span-1 sm:col-span-2 lg:col-span-3 p-5">
+                    <div class="flex relative pl-5 hover:scale-105 transition-all duration-500 ease-in-out ">
+                        <i class="fa fa-search text-gray-400 z-20 hover:text-gray-300 absolute top-5 left-7"></i>
+                        <input type="text" class="bg-gray-600 text-gray-100 h-14 w-11/12 px-7 rounded-3xl z-0 border-2 border-gray-700 shadow-lg shadow-blue-600/50 hover:border-blue-400 hover:border-2 focus-visible:bg-gray-700 focus-visible:outline-none cursor-text" placeholder="Search anything...">
                     </div>
                 </section>
                 <section class="col-start-3 lg:col-start-4 col-span-full p-5">
                     <div class="flex items-center justify-center gap-x-7 pt-3.5">
-                      <i class="fa-regular fa-bell text-2xl md:text-4xl"></i>
-                      <i class="fa-solid fa-circle-user text-2xl md:text-4xl" style="color: #edc14e;"></i>
-                      <p class="font-semibold text-blue-950 text-lg md:text-xl">Leonard Farmer</p>
+                        <i class="fa-regular fa-bell text-gray-400 text-2xl md:text-4xl transform translate-z-0 hover:scale-105 duration-300 cursor-pointer"></i>
+                        <i class="fa-solid fa-circle-user text-blue-400 text-2xl md:text-4xl rounded-full hover:scale-105 transition-transform duration-300 cursor-pointer"></i>
+                        <p class="font-semibold text-gray-100 text-base md:text-lg lg:text-xl">Leonard Farmer</p>
                     </div>
                 </section>
                 <section class="row-start-2 col-span-1 sm:col-span-2 lg:col-span-3 p-5">
                     <div class="flex gap-x-5">
                         <div class="flex items-center">
-                            <i class="fa-solid fa-circle-user text-2xl md:text-7xl" style="color: #edc14e;"></i>
+                            <i class="fa-solid fa-circle-user text-blue-400 text-2xl md:text-7xl"></i>
                         </div>
-                        <div class="flex flex-col items-start self-center">
-                            <span class="text-xl font-semibold">Hi there,</span>
-                            <span class="text-2xl font-bold">Leonard Farmer(@thedividedorange)</span>
+                        <div class="flex flex-col items-start self-center shrink text-ellipsis overflow-hidden">
+                            <span class="text-base md:text-sm lg:text-lg text-gray-100 font-semibold">Hi there,</span>
+                            <span class="text-lg md:text-xl lg:text-2xl text-gray-400 font-bold">Leonard Farmer(@thedividedorange)</span>
                         </div>
                     </div>
                 </section>
                 <section class="col-start-3 lg:col-start-4 col-span-full p-5">
                     <div class="flex mt-5">
-                        <div class="panelButtonGroup flex items-end self-end gap-x-1.5" role="group">
-                            <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl font-semibold">
+                        <div class="panelButtonGroup flex md:flex-wrap md:justify-center md:gap-y-2 gap-x-1.5" role="group">
+                            <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-600 rounded-3xl font-semibold">
                                 Profile
                             </button>
-                            <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl font-semibold">
+                            <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-600 rounded-3xl font-semibold">
                             Settings
                             </button>
-                            <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-700 rounded-3xl font-semibold">
+                            <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-600 rounded-3xl font-semibold">
                             Messages
                             </button>
                         </div>
@@ -116,8 +116,194 @@
                 </section>
             </div>    
         </header>
+        <!--Main content-->
+        <div class="row-start-2 col-start-2 col-span-full bg-gray-200">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+                <section class="row-span-full col-span-full lg:col-span-3">
+                    <h2 class="text-base md:text-lg lg:text-xl font-semibold antialiased p-5">Your Projects</h2>
+                    <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-3 p-3">
+                        <div class="card">
+                            <article class="flex flex-col bg-cover bg-[url('imgs/calculator.jpg')] justify-between bg-white border-2 border-l-4 border-l-gray-900 rounded-lg p-5 h-[200px] shadow-[0_0px_3px_0px_#a7a7a794]  hover:scale-105 transition-transform duration-500">
+                                <header>
+                                    <h3 class="text-gray-300 text-sm md:text-base lg:text-lg text-left font-bold antialiased bg-gray-900/50 backdrop-blur-sm ">JavaScript Calculator </h3>
+                                </header>
+                                <div class="bg-gray-900/50 backdrop-blur-sm">
+                                    <span class="text-white italic">
+                                        This Calculator is created Using HTML, CSS & JavaScript
+                                    </span>
+                                </div>
+                                <div class="cardButtonGroup flex justify-end gap-5 pr-2 pt-4">
+                                    <i class="fa-regular fa-star hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-regular fa-eye hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-solid fa-code-branch hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                </div>
+                            </article> 
+                        </div>
+                        <div class="card">
+                            <article class="flex flex-col bg-cover bg-[url('imgs/calculator.jpg')] justify-between bg-white border-2 border-l-4 border-l-gray-900 rounded-lg p-5 h-[200px] shadow-[0_0px_3px_0px_#a7a7a794]  hover:scale-105 transition-transform duration-500">
+                                <header>
+                                    <h3 class="text-gray-300 text-sm md:text-base lg:text-lg text-left font-bold antialiased bg-gray-900/50 backdrop-blur-sm ">JavaScript Calculator </h3>
+                                </header>
+                                <div class="bg-gray-900/50 backdrop-blur-sm">
+                                    <span class="text-white italic">
+                                        This Calculator is created Using HTML, CSS & JavaScript
+                                    </span>
+                                </div>
+                                <div class="cardButtonGroup flex justify-end gap-5 pr-2 pt-4">
+                                    <i class="fa-regular fa-star hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-regular fa-eye hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-solid fa-code-branch hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                </div>
+                            </article> 
+                        </div>
+                        <div class="card">
+                            <article class="flex flex-col bg-cover bg-[url('imgs/calculator.jpg')] justify-between bg-white border-2 border-l-4 border-l-gray-900 rounded-lg p-5 h-[200px] shadow-[0_0px_3px_0px_#a7a7a794]  hover:scale-105 transition-transform duration-500">
+                                <header>
+                                    <h3 class="text-gray-300 text-sm md:text-base lg:text-lg text-left font-bold antialiased bg-gray-900/50 backdrop-blur-sm ">JavaScript Calculator </h3>
+                                </header>
+                                <div class="bg-gray-900/50 backdrop-blur-sm">
+                                    <span class="text-white italic">
+                                        This Calculator is created Using HTML, CSS & JavaScript
+                                    </span>
+                                </div>
+                                <div class="cardButtonGroup flex justify-end gap-5 pr-2 pt-4">
+                                    <i class="fa-regular fa-star hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-regular fa-eye hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-solid fa-code-branch hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                </div>
+                            </article> 
+                        </div>
+                        <div class="card">
+                            <article class="flex flex-col bg-cover bg-[url('imgs/calculator.jpg')] justify-between bg-white border-2 border-l-4 border-l-gray-900 rounded-lg p-5 h-[200px] shadow-[0_0px_3px_0px_#a7a7a794]  hover:scale-105 transition-transform duration-500">
+                                <header>
+                                    <h3 class="text-gray-300 text-sm md:text-base lg:text-lg text-left font-bold antialiased bg-gray-900/50 backdrop-blur-sm ">JavaScript Calculator </h3>
+                                </header>
+                                <div class="bg-gray-900/50 backdrop-blur-sm">
+                                    <span class="text-white italic">
+                                        This Calculator is created Using HTML, CSS & JavaScript
+                                    </span>
+                                </div>
+                                <div class="cardButtonGroup flex justify-end gap-5 pr-2 pt-4">
+                                    <i class="fa-regular fa-star hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-regular fa-eye hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-solid fa-code-branch hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                </div>
+                            </article> 
+                        </div>
+                        <div class="card">
+                            <article class="flex flex-col bg-cover bg-[url('imgs/calculator.jpg')] justify-between bg-white border-2 border-l-4 border-l-gray-900 rounded-lg p-5 h-[200px] shadow-[0_0px_3px_0px_#a7a7a794]  hover:scale-105 transition-transform duration-500">
+                                <header>
+                                    <h3 class="text-gray-300 text-sm md:text-base lg:text-lg text-left font-bold antialiased bg-gray-900/50 backdrop-blur-sm ">JavaScript Calculator </h3>
+                                </header>
+                                <div class="bg-gray-900/50 backdrop-blur-sm">
+                                    <span class="text-white italic">
+                                        This Calculator is created Using HTML, CSS & JavaScript
+                                    </span>
+                                </div>
+                                <div class="cardButtonGroup flex justify-end gap-5 pr-2 pt-4">
+                                    <i class="fa-regular fa-star hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-regular fa-eye hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-solid fa-code-branch hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                </div>
+                            </article> 
+                        </div>
+                        <div class="card">
+                            <article class="flex flex-col bg-cover bg-[url('imgs/calculator.jpg')] justify-between bg-white border-2 border-l-4 border-l-gray-900 rounded-lg p-5 h-[200px] shadow-[0_0px_3px_0px_#a7a7a794]  hover:scale-105 transition-transform duration-500">
+                                <header>
+                                    <h3 class="text-gray-300 text-sm md:text-base lg:text-lg text-left font-bold antialiased bg-gray-900/50 backdrop-blur-sm ">JavaScript Calculator </h3>
+                                </header>
+                                <div class="bg-gray-900/50 backdrop-blur-sm">
+                                    <span class="text-white italic">
+                                        This Calculator is created Using HTML, CSS & JavaScript
+                                    </span>
+                                </div>
+                                <div class="cardButtonGroup flex justify-end gap-5 pr-2 pt-4">
+                                    <i class="fa-regular fa-star hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-regular fa-eye hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-solid fa-code-branch hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                </div>
+                            </article> 
+                        </div>
+                        <div class="card">
+                            <article class="flex flex-col bg-cover bg-[url('imgs/calculator.jpg')] justify-between bg-white border-2 border-l-4 border-l-gray-900 rounded-lg p-5 h-[200px] shadow-[0_0px_3px_0px_#a7a7a794]  hover:scale-105 transition-transform duration-500">
+                                <header>
+                                    <h3 class="text-gray-300 text-sm md:text-base lg:text-lg text-left font-bold antialiased bg-gray-900/50 backdrop-blur-sm ">JavaScript Calculator </h3>
+                                </header>
+                                <div class="bg-gray-900/50 backdrop-blur-sm">
+                                    <span class="text-white italic">
+                                        This Calculator is created Using HTML, CSS & JavaScript
+                                    </span>
+                                </div>
+                                <div class="cardButtonGroup flex justify-end gap-5 pr-2 pt-4">
+                                    <i class="fa-regular fa-star hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-regular fa-eye hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-solid fa-code-branch hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                </div>
+                            </article> 
+                        </div>
+                        <div class="card">
+                            <article class="flex flex-col bg-cover bg-[url('imgs/calculator.jpg')] justify-between bg-white border-2 border-l-4 border-l-gray-900 rounded-lg p-5 h-[200px] shadow-[0_0px_3px_0px_#a7a7a794]  hover:scale-105 transition-transform duration-500">
+                                <header>
+                                    <h3 class="text-gray-300 text-sm md:text-base lg:text-lg text-left font-bold antialiased bg-gray-900/50 backdrop-blur-sm ">JavaScript Calculator </h3>
+                                </header>
+                                <div class="bg-gray-900/50 backdrop-blur-sm">
+                                    <span class="text-white italic">
+                                        This Calculator is created Using HTML, CSS & JavaScript
+                                    </span>
+                                </div>
+                                <div class="cardButtonGroup flex justify-end gap-5 pr-2 pt-4">
+                                    <i class="fa-regular fa-star hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-regular fa-eye hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-solid fa-code-branch hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                </div>
+                            </article> 
+                        </div>
+                        <div class="card">
+                            <article class="flex flex-col bg-cover bg-[url('imgs/calculator.jpg')] justify-between bg-white border-2 border-l-4 border-l-gray-900 rounded-lg p-5 h-[200px] shadow-[0_0px_3px_0px_#a7a7a794]  hover:scale-105 transition-transform duration-500">
+                                <header>
+                                    <h3 class="text-gray-300 text-sm md:text-base lg:text-lg text-left font-bold antialiased bg-gray-900/50 backdrop-blur-sm ">JavaScript Calculator </h3>
+                                </header>
+                                <div class="bg-gray-900/50 backdrop-blur-sm">
+                                    <span class="text-white italic">
+                                        This Calculator is created Using HTML, CSS & JavaScript
+                                    </span>
+                                </div>
+                                <div class="cardButtonGroup flex justify-end gap-5 pr-2 pt-4">
+                                    <i class="fa-regular fa-star hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-regular fa-eye hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                    <i class="fa-solid fa-code-branch hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i>
+                                </div>
+                            </article> 
+                        </div>
 
-        <div class="row-start-2 col-start-2 col-span-3">test</div>
+
+                    </div>
+                    
+                </section>
+                <section class="lg:row-span-full lg:col-start-4 lg:col-span-full">
+                    <h2 class="text-base md:text-lg lg:text-xl font-semibold antialiased p-5">Announcements</h2>
+                    <div class="grid grid-flow-row auto-cols-[minmax(200px,_1fr)] p-3">
+                        <div class="card">
+                            <article class="flex flex-col justify-center bg-white border-2 rounded-lg p-5 h-[200px] shadow-[0_0px_3px_0px_#a7a7a794] hover:scale-105 transition-transform duration-500">
+                                <header>
+                                    <h3 class="text-black-300 text-sm md:text-base lg:text-lg text-left font-bold antialiased">JavaScript Calculator </h3>
+                                </header>
+                                <div class="">
+                                    <span class="text-grey-100">
+                                        This Calculator is created Using HTML, CSS & JavaScript
+                                    </span>
+                                </div>
+
+                            </article> 
+                        </div>
+                        
+                        
+                    </div>
+
+                </section>
+               
+            </div>
+        </div>
     </div>
 </body>
 </html>
