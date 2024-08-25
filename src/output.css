@@ -654,6 +654,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -716,8 +720,8 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-\[repeat\(auto-fit\2c minmax\(24rem\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
+.grid-cols-\[repeat\(auto-fit\2c minmax\(22rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
 }
 
 .flex-col {
@@ -1229,12 +1233,20 @@ video {
     grid-column: span 3 / span 3;
   }
 
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .lg\:col-span-full {
     grid-column: 1 / -1;
   }
 
   .lg\:col-start-4 {
     grid-column-start: 4;
+  }
+
+  .lg\:col-start-7 {
+    grid-column-start: 7;
   }
 
   .lg\:row-span-full {
@@ -1247,6 +1259,10 @@ video {
 
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
   .lg\:text-4xl {

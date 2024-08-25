@@ -16,6 +16,13 @@
             height: 20px;
             display: inline-block;
         }
+
+        .clamp {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+        }
     </style>
 
 </head>
@@ -118,16 +125,16 @@
         </header>
         <!--Main content-->
         <div class="row-start-2 row-span-2 col-start-2 col-span-full bg-gray-200">
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
-                <section class="row-span-full col-span-full lg:col-span-3">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-8">
+                <section class="row-span-full col-span-full lg:col-span-6">
                     <h2 class="text-base md:text-lg lg:text-xl font-semibold antialiased p-5">Your Projects</h2>
-                    <div class="grid grid-cols-[repeat(auto-fit,minmax(24rem,1fr))] gap-3 p-3">
+                    <div class="grid grid-cols-[repeat(auto-fit,minmax(22rem,1fr))] gap-3 p-3">
                         <div class="card cursor-pointer">
                             <article class="flex flex-col bg-cover bg-[url('imgs/calculator.jpg')] justify-between bg-white border-l-4 border-l-gray-700 rounded-lg p-5 h-80 shadow-[0_4px_10px_5px_#8d8d8d] hover:scale-105 transition-transform duration-500">
                                 <header class="text-left text-gray-300 text-sm md:text-base lg:text-lg font-bold antialiased">
                                     <h3 class="inline-flex bg-gray-900/50 backdrop-blur-sm ">JavaScript Calculator</h3>
                                 </header>
-                                <main class="text-white italic bg-gray-900/50 backdrop-blur-sm">
+                                <main class="text-white italic bg-gray-900/50 backdrop-blur-sm clamp">
                                     This Calculator is created Using HTML, CSS & JavaScript. allows you to perform basic arithmetic calculations right in your web browser. Whether you're at home, at work, or on the go, you can use this calculator anytime you need to crunch some numbers. 
                                 </main>
                                 <footer class="cardButtonGroup flex justify-end gap-5 pr-2">
@@ -142,7 +149,7 @@
                                 <header class="text-left text-gray-300 text-sm md:text-base lg:text-lg font-bold antialiased">
                                     <h3 class="inline-flex bg-gray-900/50 backdrop-blur-sm ">Etch a Sketch</h3>
                                 </header>
-                                <main class="text-white italic bg-gray-900/50 backdrop-blur-sm">
+                                <main class="text-white italic bg-gray-900/50 backdrop-blur-sm clamp">
                                     This drawing app is built with HTML, CSS, and JavaScript. It lets you draw using single colors or a rainbow color wheel. You can choose custom colors, erase, shade grid boxes, and reset the entire drawing board.
                                 </main>
                                 <footer class="cardButtonGroup flex justify-end gap-5 pr-2">
@@ -152,10 +159,39 @@
                                 </footer>
                             </article> 
                         </div>
-                       
-                    
+                        <div class="card cursor-pointer">
+                            <article class="flex flex-col bg-cover bg-[url('imgs/etch-a-sketch.png')] justify-between bg-white border-l-4 border-l-gray-700 rounded-lg p-5 h-80 shadow-[0_4px_10px_5px_#8d8d8d] hover:scale-105 transition-transform duration-500">
+                                <header class="text-left text-gray-300 text-sm md:text-base lg:text-lg font-bold antialiased">
+                                    <h3 class="inline-flex bg-gray-900/50 backdrop-blur-sm ">Etch a Sketch</h3>
+                                </header>
+                                <main class="text-white italic bg-gray-900/50 backdrop-blur-sm clamp">
+                                    This drawing app is built with HTML, CSS, and JavaScript. It lets you draw using single colors or a rainbow color wheel. You can choose custom colors, erase, shade grid boxes, and reset the entire drawing board.
+                                </main>
+                                <footer class="cardButtonGroup flex justify-end gap-5 pr-2">
+                                    <a href="https://www.theodinproject.com/"><i class="fa-solid fa-star text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
+                                    <a href="https://thedividedorange.github.io/Project-Etch-a-sketch/"><i class="fa-regular fa-eye text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
+                                    <a href="https://github.com/thedividedorange/Project-Etch-a-sketch"><i class="fa-solid fa-code-branch text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
+                                </footer>
+                            </article> 
+                        </div>
+                        <div class="card cursor-pointer">
+                            <article class="flex flex-col bg-cover bg-[url('imgs/etch-a-sketch.png')] justify-between bg-white border-l-4 border-l-gray-700 rounded-lg p-5 h-80 shadow-[0_4px_10px_5px_#8d8d8d] hover:scale-105 transition-transform duration-500">
+                                <header class="text-left text-gray-300 text-sm md:text-base lg:text-lg font-bold antialiased">
+                                    <h3 class="inline-flex bg-gray-900/50 backdrop-blur-sm ">Etch a Sketch</h3>
+                                </header>
+                                <main class="text-white italic bg-gray-900/50 backdrop-blur-sm clamp">
+                                    This drawing app is built with HTML, CSS, and JavaScript. It lets you draw using single colors or a rainbow color wheel. You can choose custom colors, erase, shade grid boxes, and reset the entire drawing board.
+                                </main>
+                                <footer class="cardButtonGroup flex justify-end gap-5 pr-2">
+                                    <a href="https://www.theodinproject.com/"><i class="fa-solid fa-star text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
+                                    <a href="https://thedividedorange.github.io/Project-Etch-a-sketch/"><i class="fa-regular fa-eye text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
+                                    <a href="https://github.com/thedividedorange/Project-Etch-a-sketch"><i class="fa-solid fa-code-branch text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
+                                </footer>
+                            </article> 
+                        </div>
+
                 </section>
-                <section class="lg:row-span-full lg:col-start-4 lg:col-span-full">
+                <section class="lg:row-span-full lg:col-start-7 lg:col-span-full">
                     <h2 class="text-base md:text-lg lg:text-xl font-semibold antialiased p-5">Announcements</h2>
                     <div class="grid grid-flow-row p-3">
                         <div class="card flex flex-col justify-center bg-white border-2 rounded-lg p-5 h-auto">
