@@ -23,100 +23,102 @@
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 5;
         }
+
     </style>
 
 </head>
 <body class="min-h-screen">
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 min-h-screen">
+    <div class="grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 min-h-screen">
+       
         <!-- Sidebar -->
-        <nav class="col-start-1 col-span-1 row-span-3 bg-gray-800 border-r border-gray-800">
+        <nav class="row-start-1 row-span-6 col-start-1 col-span-1 bg-background-dark border-r border-border-dark border-dashed">
             <div class="flex flex-col box-border p-6">
                 <div class="flex items-baseline">
-                    <i class="fa-solid fa-chart-line text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-100 mr-2"></i>
-                    <h1 class="text-gray-100 font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                    <i class="fa-solid fa-chart-line text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-text-dark-primary mr-2"></i>
+                    <h1 class="text-text-dark-primary font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl">
                         Dashboard
                     </h1>
                 </div>
                 <ul class="flex flex-col list-none leading-10 py-6 px-1.5 cursor-pointer">
-                    <li class="flex items-center p-2 my-2 rounded-lg drop-shadow-[0_4px_3px_rgb(0,0,0,1)] hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-house text-gray-100"></i>
-                        <span class="font-bold text-gray-400">Home</span>
+                    <li class="flex items-center p-2 my-2 rounded-lg drop-shadow-dark-primary hover:bg-background-dark-hover">
+                        <i class="icon fa-solid fa-house text-text-dark-primary pr-2"></i>
+                        <span class="font-bold text-text-dark-secondary break-words whitespace-normal w-full">Home</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 rounded-lg drop-shadow-[0_4px_3px_rgb(0,0,0,1)] hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-user text-gray-100"></i>
-                        <span class="font-bold text-gray-400">Profile</span>
+                    <li class="flex items-center p-2 my-2 rounded-lg drop-shadow-dark-primary hover:bg-background-dark-hover">
+                        <i class="icon fa-solid fa-user text-text-dark-primary pr-2"></i>
+                        <span class="font-bold text-text-dark-secondary break-words whitespace-normal w-full">Profile</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 rounded-lg drop-shadow-[0_4px_3px_rgb(0,0,0,1)] hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-message text-gray-100"></i>
-                        <span class="font-bold text-gray-400">Messages</span>
+                    <li class="flex items-center p-2 my-2 rounded-lg drop-shadow-dark-primary hover:bg-background-dark-hover">
+                        <i class="icon fa-solid fa-message text-text-dark-primary pr-2"></i>
+                        <span class="font-bold text-text-dark-secondary break-words whitespace-normal w-full">Messages</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 rounded-lg drop-shadow-[0_4px_3px_rgb(0,0,0,1)] hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-clock text-gray-100"></i>
-                        <span class="font-bold text-gray-400">History</span>
+                    <li class="flex items-center p-2 my-2 rounded-lg drop-shadow-dark-primary hover:bg-background-dark-hover">
+                        <i class="icon fa-solid fa-clock text-text-dark-primary pr-2"></i>
+                        <span class="font-bold text-text-dark-secondary break-words whitespace-normal w-full">History</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 rounded-lg drop-shadow-[0_4px_3px_rgb(0,0,0,1)] hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-list-check text-gray-100"></i>
-                        <span class="font-bold text-gray-400">Tasks</span>
+                    <li class="flex items-center p-2 my-2 rounded-lg drop-shadow-dark-primary hover:bg-background-dark-hover">
+                        <i class="icon fa-solid fa-list-check text-text-dark-primary pr-2"></i>
+                        <span class="font-bold text-text-dark-secondary break-words whitespace-normal w-full">Tasks</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 rounded-lg drop-shadow-[0_4px_3px_rgb(0,0,0,1)] hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-people-group text-gray-100"></i>
-                        <span class="font-bold text-gray-400">Communities</span>
+                    <li class="flex items-center p-2 my-2 rounded-lg drop-shadow-dark-primary hover:bg-background-dark-hover">
+                        <i class="icon fa-solid fa-people-group text-text-dark-primary pr-2"></i>
+                        <span class="font-bold text-text-dark-secondary break-words whitespace-normal w-full">Communities</span>
                     </li>
                 </ul>
-                <ul class="list-none leading-10 py-6 px-1.5 cursor-pointer">
-                    <li class="flex items-center p-2 mb-2 rounded-lg drop-shadow-[0_4px_3px_rgb(0,0,0,1)] hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-gear text-gray-100"></i>
-                        <span class="font-bold text-gray-400">Settings</span>
+                <ul class="flex flex-col list-none leading-10 py-6 px-1.5 cursor-pointer">
+                    <li class="flex items-center p-2 my-2 rounded-lg drop-shadow-dark-primary hover:bg-background-dark-hover">
+                        <i class="icon fa-solid fa-gear text-text-dark-primary pr-2"></i>
+                        <span class="font-bold text-text-dark-secondary break-words whitespace-normal w-full">Settings</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 rounded-lg drop-shadow-[0_4px_3px_rgb(0,0,0,1)] hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-circle-info text-gray-100"></i>
-                        <span class="font-bold text-gray-400">Support</span>
+                    <li class="flex items-center p-2 my-2 rounded-lg drop-shadow-dark-primary hover:bg-background-dark-hover">
+                        <i class="icon fa-solid fa-circle-info text-text-dark-primary pr-2"></i>
+                        <span class="font-bold text-text-dark-secondary break-words whitespace-normal w-full">Support</span>
                     </li>
-                    <li class="flex items-center p-2 mb-2 rounded-lg drop-shadow-[0_4px_3px_rgb(0,0,0,1)] hover:scale-105 hover:bg-gray-900 hover:shadow-lg hover:shadow-current transition duration-300 ease-in-out">
-                        <i class="icon fa-solid fa-shield-halved text-gray-100"></i>
-                        <span class="font-bold text-gray-400">Privacy</span>
+                    <li class="flex items-center p-2 my-2 rounded-lg drop-shadow-dark-primary hover:bg-background-dark-hover">
+                        <i class="icon fa-solid fa-shield-halved text-text-dark-primary pr-2"></i>
+                        <span class="font-bold text-text-dark-secondary break-words whitespace-normal w-full">Privacy</span>
                     </li>
                 </ul>
             </div>
         </nav>
         <!--Header-->
-        <header class="grid row-span-1 col-start-2 col-span-full bg-gray-900 border-b-8 border-gray-700">
-            <div class="grid grid-cols-2 row-span-full sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-                <section class="col-span-1 sm:col-span-2 lg:col-span-3 p-5">
-                    <div class="flex relative pl-5 hover:scale-105 transition-all duration-500 ease-in-out ">
-                        <i class="fa fa-search text-gray-400 z-20 hover:text-gray-300 absolute top-5 left-7"></i>
+        <header class="grid row-span-1 col-start-2 col-span-full bg-background-dark border-b border-border-dark border-dashed">
+            <div class="grid grid-cols-2 row-span-full grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-x-1">
+                <section class="col-span-1 sm:col-span-2 lg:col-span-3 xl:col-span-4 p-5">
+                    <div class="flex relative pt-2 pl-5 hover:scale-105 transition-all duration-500 ease-in-out ">
+                        <i class="fa fa-search text-gray-400 z-20 hover:text-gray-300 absolute top-7 left-7"></i>
                         <input type="text" class="bg-gray-600 text-gray-100 h-14 w-11/12 px-7 rounded-3xl z-0 border-2 border-gray-700 shadow-lg shadow-blue-600/50 hover:border-blue-400 hover:border-2 focus-visible:bg-gray-700 focus-visible:outline-none cursor-text" placeholder="Search anything...">
                     </div>
                 </section>
-                <section class="col-start-3 lg:col-start-4 col-span-full p-5">
-                    <div class="flex items-center justify-center gap-x-7 pt-3.5">
-                        <i class="fa-regular fa-bell text-gray-400 text-2xl drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] md:text-4xl transform translate-z-0 hover:scale-105 duration-300 cursor-pointer"></i>
-                        <i class="fa-solid fa-circle-user text-blue-400 text-2xl drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] md:text-4xl rounded-full hover:scale-105 transition-transform duration-300 cursor-pointer"></i>
-                        <p class="font-semibold text-gray-100 text-base md:text-lg lg:text-xl drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] ">Leonard Farmer</p>
+                <section class="col-start-3 lg:col-start-4 xl:col-start-5 col-span-full p-5">
+                    <div class="flex items-center justify-end gap-x-2 md:gap-x-7 pt-3.5 lg:pr-8">
+                        <i class="fa-regular fa-bell text-text-dark-primary hover:text-text-dark-secondary text-2xl drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] md:text-4xl cursor-pointer hover:animate-[spin_500ms_ease-in-out]"></i>
+                        <i class="fa-solid fa-circle-user text-accent-dark hover:text-accent-dark-hover text-2xl drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] md:text-4xl cursor-pointer hover:animate-[spin_500ms_ease-in-out]"></i>
+                        <p class="font-semibold text-text-dark-primary text-base md:text-lg lg:text-xl drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)]">Leonard Farmer</p>
                     </div>
                 </section>
-                <section class="row-start-2 col-span-1 sm:col-span-2 lg:col-span-3 p-5">
-                    <div class="flex gap-x-5">
+                <section class="row-start-2 col-span-1 sm:col-span-2 lg:col-span-3 xl:col-span-4 p-5">
+                    <div class="flex gap-x-5 pl-5">
                         <div class="flex items-center">
-                            <i class="fa-solid fa-circle-user text-blue-400 text-2xl md:text-7xl"></i>
+                            <i class="fa-solid fa-circle-user text-accent-dark text-5xl md:text-7xl"></i>
                         </div>
-                        <div class="flex flex-col items-start self-center shrink text-ellipsis overflow-hidden">
-                            <span class="text-base md:text-sm lg:text-lg text-gray-100 font-semibold">Hi there,</span>
-                            <span class="text-lg md:text-xl lg:text-2xl text-gray-400 font-bold">Leonard Farmer(@thedividedorange)</span>
+                        <div class="flex flex-col items-start self-center overflow-hidden">
+                            <span class="text-base md:text-lg text-text-dark-secondary font-semibold">Hi there,</span>
+                            <span class="text-lg md:text-xl lg:text-2xl text-text-dark-primary font-bold w-full break-words whitespace-normal">Leonard Farmer(@thedividedorange)</span>
                         </div>
                     </div>
                 </section>
-                <section class="col-start-3 lg:col-start-4 col-span-full p-5">
-                    <div class="flex mt-5">
-                        <div class="panelButtonGroup flex md:flex-wrap md:justify-center md:gap-y-2 gap-x-1.5" role="group">
-                            <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-600 rounded-3xl font-semibold">
-                                Profile
+                <section class="col-start-3 lg:col-start-4 xl:col-start-5 col-span-full p-5">
+                    <div class="flex lg:mt-5 justify-center">
+                        <div class="panelButtonGroup flex flex-wrap justify-center gap-y-2 gap-x-1.5 lg:gap-x-2" role="group">
+                            <button type="button" class="h-10 lg:h-11 xl:h-12 w-fit bg-accent-dark hover:bg-accent-dark-hover px-8 text-sm lg:text-md xl:text-lg font-medium text-white rounded-3xl font-semibold border-border-btn hover:border-border-btn-hover">
+                                <span class="drop-shadow-dark-secondary pt-1">Profile</span>
                             </button>
-                            <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-600 rounded-3xl font-semibold">
-                            Settings
+                            <button type="button" class="h-10 lg:h-11 xl:h-12 w-fit bg-accent-dark hover:bg-accent-dark-hover px-8 text-sm lg:text-md xl:text-lg font-medium text-white rounded-3xl font-semibold border-border-btn hover:border-border-btn-hover">
+                                <span class="drop-shadow-dark-secondary pt-1">Settings</span>
                             </button>
-                            <button type="button" class="h-10 w-fit bg-blue-500 px-8 text-sm font-medium text-white hover:bg-blue-600 rounded-3xl font-semibold">
-                            Messages
+                            <button type="button" class="h-10 lg:h-11 xl:h-12 w-fit bg-accent-dark hover:bg-accent-dark-hover px-8 text-sm lg:text-md xl:text-lg font-medium text-white rounded-3xl font-semibold border-border-btn hover:border-border-btn-hover">
+                                <span class="drop-shadow-dark-secondary pt-1">Messages</span>
                             </button>
                         </div>
                     </div>
@@ -124,7 +126,7 @@
             </div>    
         </header>
         <!--Main content-->
-        <div class="row-start-2 row-span-2 col-start-2 col-span-full bg-gray-200">
+        <div class="row-start-2 row-span-2 col-start-2 col-span-full bg-background-dark">
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-8">
                 <section class="row-span-full col-span-full lg:col-span-6">
                     <h2 class="text-base md:text-lg lg:text-xl font-semibold antialiased p-5">Your Projects</h2>
