@@ -788,6 +788,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-clip {
+  overflow: clip;
+}
+
 .whitespace-normal {
   white-space: normal;
 }
@@ -884,10 +888,6 @@ video {
   background-size: cover;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -898,6 +898,11 @@ video {
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .py-6 {
@@ -957,14 +962,14 @@ video {
   text-align: left;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-base {
@@ -1007,6 +1012,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-accent-dark {
+  --tw-text-opacity: 1;
+  color: rgb(70 128 255 / var(--tw-text-opacity));
+}
+
 .text-text-dark-primary {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -1023,11 +1033,6 @@ video {
 .text-gray-100 {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
-}
-
-.text-accent-dark {
-  --tw-text-opacity: 1;
-  color: rgb(70 128 255 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1204,6 +1209,11 @@ video {
   outline-offset: 2px;
 }
 
+.group:hover .group-hover\:text-accent-dark-hover {
+  --tw-text-opacity: 1;
+  color: rgb(60 109 217 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
@@ -1215,6 +1225,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:inline-block {
+    display: inline-block;
+  }
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1226,16 +1240,6 @@ video {
   .md\:gap-x-7 {
     -moz-column-gap: 1.75rem;
          column-gap: 1.75rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-4xl {
@@ -1318,16 +1322,6 @@ video {
     padding-right: 2rem;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1365,18 +1359,15 @@ video {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 
-  .xl\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
