@@ -21,4 +21,21 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
     })
     
+    const menuBtn = document.getElementById('menu-btn')
+    const sidebar = document.getElementById('sidebar')
+    const body = document.querySelector('body')
+    
+  
+    menuBtn.addEventListener('click', (e) => {
+        e.stopPropagation()
+        sidebar.classList.toggle('translate-x-0')
+        sidebar.classList.toggle('transition-transform')
+    })
+    
+    body.addEventListener('click', function(e) {
+        if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
+            sidebar.classList.remove('translate-x-0')
+            sidebar.classList.remove('transition-transform')
+        }
+    })
 })
