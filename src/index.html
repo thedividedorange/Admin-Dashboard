@@ -126,75 +126,99 @@
             </div>    
         </header>
         <!--Main content-->
-        <div class="row-start-2 row-span-2 col-start-2 col-span-full bg-background-dark">
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-8">
-                <section class="row-span-full col-span-full lg:col-span-6">
-                    <h2 class="text-base md:text-lg lg:text-xl font-semibold antialiased p-5">Your Projects</h2>
-                    <div class="grid grid-cols-[repeat(auto-fit,minmax(22rem,1fr))] gap-3 p-3">
-                        <div class="card cursor-pointer">
-                            <article class="flex flex-col bg-cover bg-[url('imgs/calculator.jpg')] justify-between bg-white border-l-4 border-l-gray-700 rounded-lg p-5 h-80 shadow-[0_4px_10px_5px_#8d8d8d] hover:scale-105 transition-transform duration-500">
-                                <header class="text-left text-gray-300 text-sm md:text-base lg:text-lg font-bold antialiased">
-                                    <h3 class="inline-flex bg-gray-900/50 backdrop-blur-sm ">JavaScript Calculator</h3>
+        <div class="row-start-2 row-span-5 col-start-2 col-span-full bg-background-dark">
+            <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
+                <section class="row-span-full col-span-full md:col-span-3 lg:col-span-4 xl:col-span-6">
+                    <h2 class="text-text-dark-primary text-base md:text-lg lg:text-xl font-semibold antialiased p-5">Your Projects</h2>
+                    <div class="grid grid-cols-[repeat(auto-fit,minmax(225px,1fr))] gap-3 p-3">
+                        <div class="card cursor-pointer bg-background-dark">
+                            <article class="flex flex-col bg-background-dark justify-between border-2 border-border-dark border-l-8 border-l-accent-dark rounded-lg p-5 h-80 shadow-card-shadow-dark hover:scale-105 transition-transform duration-500">
+                                <header class="text-left">
+                                    <h3 class="inline-flex bg-background-dark text-text-dark-primary text-sm md:text-base lg:text-lg font-bold antialiased backdrop-blur-sm ">JavaScript Calculator</h3>
                                 </header>
-                                <main class="text-white italic bg-gray-900/50 backdrop-blur-sm clamp">
-                                    This Calculator is created Using HTML, CSS & JavaScript. allows you to perform basic arithmetic calculations right in your web browser. Whether you're at home, at work, or on the go, you can use this calculator anytime you need to crunch some numbers. 
-                                </main>
+                                <div class="flex items-center bg-[url('./imgs/calculator.jpg')] bg-no-repeat bg-cover bg-center h-full my-3 border-2 border-border-dark rounded-lg shadow-card-image-inset">
+                                    <main class="inline-flex text-text-dark-secondary italic bg-background-dark opacity-70 clamp"> 
+                                        This Calculator is created Using HTML, CSS & JavaScript. allows you to perform basic arithmetic calculations right in your web browser. Whether you're at home, at work, or on the go, you can use this calculator anytime you need to crunch some numbers. 
+                                    </main>
+                                </div>
                                 <footer class="cardButtonGroup flex justify-end gap-5 pr-2">
-                                    <a href="https://www.theodinproject.com/"><i class="fa-solid fa-star text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
-                                    <a href="https://thedividedorange.github.io/Project-Calculator-js/"><i class="fa-regular fa-eye text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
-                                    <a href="https://github.com/thedividedorange/Project-Calculator-js"><i class="fa-solid fa-code-branch text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
+                                    <a href="https://www.theodinproject.com/"><i class="fa-solid fa-star text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
+                                    <a href="https://thedividedorange.github.io/Project-Calculator-js/"><i class="fa-regular fa-eye text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
+                                    <a href="https://github.com/thedividedorange/Project-Calculator-js"><i class="fa-solid fa-code-branch text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
                                 </footer>
                             </article> 
                         </div>
-                        <div class="card cursor-pointer">
-                            <article class="flex flex-col bg-cover bg-[url('imgs/etch-a-sketch.png')] justify-between bg-white border-l-4 border-l-gray-700 rounded-lg p-5 h-80 shadow-[0_4px_10px_5px_#8d8d8d] hover:scale-105 transition-transform duration-500">
-                                <header class="text-left text-gray-300 text-sm md:text-base lg:text-lg font-bold antialiased">
-                                    <h3 class="inline-flex bg-gray-900/50 backdrop-blur-sm ">Etch a Sketch</h3>
+                        <div class="card cursor-pointer bg-background-dark">
+                            <article class="flex flex-col bg-background-dark justify-between border-2 border-border-dark border-l-8 border-l-accent-dark rounded-lg p-5 h-80 shadow-card-shadow-dark hover:scale-105 transition-transform duration-500">
+                                <header class="text-left">
+                                    <h3 class="inline-flex bg-background-dark text-text-dark-primary text-sm md:text-base lg:text-lg font-bold antialiased backdrop-blur-sm ">Etch a Sketch</h3>
                                 </header>
-                                <main class="text-white italic bg-gray-900/50 backdrop-blur-sm clamp">
-                                    This drawing app is built with HTML, CSS, and JavaScript. It lets you draw using single colors or a rainbow color wheel. You can choose custom colors, erase, shade grid boxes, and reset the entire drawing board.
-                                </main>
+                                <div class="flex items-center bg-[url('./imgs/etch-a-sketch.png')] bg-no-repeat bg-cover bg-center h-full my-3 border-2 border-border-dark rounded-lg shadow-card-image-inset">
+                                    <main class="inline-flex text-text-dark-secondary italic bg-background-dark opacity-70 clamp"> 
+                                        This drawing app is built with HTML, CSS, and JavaScript. It lets you draw using single colors or a rainbow color wheel. You can choose custom colors, erase, shade grid boxes, and reset the entire drawing board.
+                                    </main>
+                                </div>
                                 <footer class="cardButtonGroup flex justify-end gap-5 pr-2">
-                                    <a href="https://www.theodinproject.com/"><i class="fa-solid fa-star text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
-                                    <a href="https://thedividedorange.github.io/Project-Etch-a-sketch/"><i class="fa-regular fa-eye text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
-                                    <a href="https://github.com/thedividedorange/Project-Etch-a-sketch"><i class="fa-solid fa-code-branch text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
+                                    <a href="https://www.theodinproject.com/"><i class="fa-solid fa-star text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
+                                    <a href="https://thedividedorange.github.io/Project-Etch-a-sketch/"><i class="fa-regular fa-eye text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
+                                    <a href="https://github.com/thedividedorange/Project-Etch-a-sketch"><i class="fa-solid fa-code-branch text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
                                 </footer>
                             </article> 
                         </div>
-                        <div class="card cursor-pointer">
-                            <article class="flex flex-col bg-cover bg-[url('imgs/etch-a-sketch.png')] justify-between bg-white border-l-4 border-l-gray-700 rounded-lg p-5 h-80 shadow-[0_4px_10px_5px_#8d8d8d] hover:scale-105 transition-transform duration-500">
-                                <header class="text-left text-gray-300 text-sm md:text-base lg:text-lg font-bold antialiased">
-                                    <h3 class="inline-flex bg-gray-900/50 backdrop-blur-sm ">Etch a Sketch</h3>
+                        <div class="card cursor-pointer bg-background-dark">
+                            <article class="flex flex-col bg-background-dark justify-between border-2 border-border-dark border-l-8 border-l-accent-dark rounded-lg p-5 h-80 shadow-card-shadow-dark hover:scale-105 transition-transform duration-500">
+                                <header class="text-left">
+                                    <h3 class="inline-flex bg-background-dark text-text-dark-primary text-sm md:text-base lg:text-lg font-bold antialiased backdrop-blur-sm ">Bootstrap Signup Form</h3>
                                 </header>
-                                <main class="text-white italic bg-gray-900/50 backdrop-blur-sm clamp">
-                                    This drawing app is built with HTML, CSS, and JavaScript. It lets you draw using single colors or a rainbow color wheel. You can choose custom colors, erase, shade grid boxes, and reset the entire drawing board.
-                                </main>
+                                <div class="flex items-center bg-[url('./imgs/signupform.jpg')] bg-no-repeat bg-cover bg-center h-full my-3 border-2 border-border-dark rounded-lg shadow-card-image-inset">
+                                    <main class="inline-flex text-text-dark-secondary italic bg-background-dark opacity-70 clamp"> 
+                                        This signup form is built with HTML, Bootstrap, and JavaScript. Along with it comes a themeswitch and input validations created in Javascript.
+                                    </main>
+                                </div>
                                 <footer class="cardButtonGroup flex justify-end gap-5 pr-2">
-                                    <a href="https://www.theodinproject.com/"><i class="fa-solid fa-star text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
-                                    <a href="https://thedividedorange.github.io/Project-Etch-a-sketch/"><i class="fa-regular fa-eye text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
-                                    <a href="https://github.com/thedividedorange/Project-Etch-a-sketch"><i class="fa-solid fa-code-branch text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
+                                    <a href="https://www.theodinproject.com/"><i class="fa-solid fa-star text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
+                                    <a href="https://thedividedorange.github.io/Project-Sign-up-Form/"><i class="fa-regular fa-eye text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
+                                    <a href="https://github.com/thedividedorange/Project-Sign-up-Form"><i class="fa-solid fa-code-branch text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
                                 </footer>
                             </article> 
-                        </div>
-                        <div class="card cursor-pointer">
-                            <article class="flex flex-col bg-cover bg-[url('imgs/etch-a-sketch.png')] justify-between bg-white border-l-4 border-l-gray-700 rounded-lg p-5 h-80 shadow-[0_4px_10px_5px_#8d8d8d] hover:scale-105 transition-transform duration-500">
-                                <header class="text-left text-gray-300 text-sm md:text-base lg:text-lg font-bold antialiased">
-                                    <h3 class="inline-flex bg-gray-900/50 backdrop-blur-sm ">Etch a Sketch</h3>
+                        </div> 
+                        <div class="card cursor-pointer bg-background-dark">
+                            <article class="flex flex-col bg-background-dark justify-between border-2 border-border-dark border-l-8 border-l-accent-dark rounded-lg p-5 h-80 shadow-card-shadow-dark hover:scale-105 transition-transform duration-500">
+                                <header class="text-left">
+                                    <h3 class="inline-flex bg-background-dark text-text-dark-primary text-sm md:text-base lg:text-lg font-bold antialiased backdrop-blur-sm ">Museum of Candy</h3>
                                 </header>
-                                <main class="text-white italic bg-gray-900/50 backdrop-blur-sm clamp">
-                                    This drawing app is built with HTML, CSS, and JavaScript. It lets you draw using single colors or a rainbow color wheel. You can choose custom colors, erase, shade grid boxes, and reset the entire drawing board.
-                                </main>
+                                <div class="flex items-center bg-[url('./imgs/museumofcandy.jpg')] bg-no-repeat bg-cover bg-center h-full my-3 border-2 border-border-dark rounded-lg shadow-card-image-inset">
+                                    <main class="inline-flex text-text-dark-secondary italic bg-background-dark opacity-70 clamp"> 
+                                        This webpage is built with HTML & Bootstrap. It shows how much flexibility and responsiveness can be acheived with Bootstrap itself.
+                                    </main>
+                                </div>
                                 <footer class="cardButtonGroup flex justify-end gap-5 pr-2">
-                                    <a href="https://www.theodinproject.com/"><i class="fa-solid fa-star text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
-                                    <a href="https://thedividedorange.github.io/Project-Etch-a-sketch/"><i class="fa-regular fa-eye text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
-                                    <a href="https://github.com/thedividedorange/Project-Etch-a-sketch"><i class="fa-solid fa-code-branch text-gray-300 drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:-translate-y-1 hover:scale-[1.3] transition-transform duration-300 cursor-pointer"></i></a>
+                                    <a href="https://www.theodinproject.com/"><i class="fa-solid fa-star text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
+                                    <a href="https://thedividedorange.github.io/Project-Museum-of-Candy-bootstrap/"><i class="fa-regular fa-eye text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
+                                    <a href="https://github.com/thedividedorange/Project-Museum-of-Candy-bootstrapthe"><i class="fa-solid fa-code-branch text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
                                 </footer>
                             </article> 
-                        </div>
-
+                        </div> 
+                        <div class="card cursor-pointer bg-background-dark">
+                            <article class="flex flex-col bg-background-dark justify-between border-2 border-border-dark border-l-8 border-l-accent-dark rounded-lg p-5 h-80 shadow-card-shadow-dark hover:scale-105 transition-transform duration-500">
+                                <header class="text-left">
+                                    <h3 class="inline-flex bg-background-dark text-text-dark-primary text-sm md:text-base lg:text-lg font-bold antialiased backdrop-blur-sm">Rock, Paper, Scissors</h3>
+                                </header>
+                                <div class="flex items-center bg-[url('./imgs/rps.jpg')] bg-no-repeat bg-cover bg-center h-full my-3 border-2 border-border-dark rounded-lg shadow-card-image-inset">
+                                    <main class="inline-flex text-text-dark-secondary italic bg-background-dark opacity-70 clamp"> 
+                                        This game is built with HTML, CSS & Javascript. This is a simple implementation of the classic Rock Paper Scissors game played against the computer. It includes a graphical user interface where the player can make their choices and see the outcome of each round.
+                                    </main>
+                                </div>
+                                <footer class="cardButtonGroup flex justify-end gap-5 pr-2">
+                                    <a href="https://www.theodinproject.com/"><i class="fa-solid fa-star text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
+                                    <a href="https://thedividedorange.github.io/Project-rock-paper-scissors/"><i class="fa-regular fa-eye text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
+                                    <a href="https://github.com/thedividedorange/Project-rock-paper-scissors"><i class="fa-solid fa-code-branch text-text-dark-primary drop-shadow-[0_4px_3px_rgba(37,99,235,0.68)] hover:animate-[spin_500ms_ease-in-out] cursor-pointer"></i></a>
+                                </footer>
+                            </article> 
+                        </div> 
                 </section>
-                <section class="lg:row-span-full lg:col-start-7 lg:col-span-full">
-                    <h2 class="text-base md:text-lg lg:text-xl font-semibold antialiased p-5">Announcements</h2>
+                <section class="lg:row-span-full col-span-full md:col-start-4 lg:col-start-5 xl:col-start-7">
+                    <h2 class="text-text-dark-primary text-base md:text-lg lg:text-xl font-semibold antialiased p-5">Announcements</h2>
                     <div class="grid grid-flow-row p-3">
                         <div class="card flex flex-col justify-center bg-white border-2 rounded-lg p-5 h-auto">
                            <article class="pb-3 border-b-2">
