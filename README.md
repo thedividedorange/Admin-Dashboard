@@ -17,7 +17,7 @@ This is a responsive Admin Dashboard created using Tailwind CSS and JavaScript. 
 
 ## Screenshots
 
-![Dashboard Screenshot](./imgs/dashboard.jpg)
+![Dashboard Screenshot](./src/imgs/dashboard.jpg)
 
 ## Installation
 
