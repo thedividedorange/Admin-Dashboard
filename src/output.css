@@ -819,10 +819,6 @@ video {
   overflow: hidden;
 }
 
-.overflow-clip {
-  overflow: clip;
-}
-
 .overflow-scroll {
   overflow: scroll;
 }
@@ -915,6 +911,10 @@ video {
 
 .bg-\[url\(\'\.\/imgs\/rps\.jpg\'\)\] {
   background-image: url('./imgs/rps.jpg');
+}
+
+.bg-\[url\(\'\.\/imgs\/demo\.png\'\)\] {
+  background-image: url('./imgs/demo.png');
 }
 
 .bg-cover {
